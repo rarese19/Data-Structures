@@ -1,0 +1,64 @@
+Alibaba:
+	-constructia celui mai mare numar folosind cifrele in ordine
+	-cu deque, pentru fiecare cifra, cat timp cifra mea este mai mare decat ultima cifra din deque, o scoate, la final, se adauga acea cifra
+	-in final se afiseaza elementele din deque
+	-daca counter-ul de cifre permis ajunge pe 0, atunci am taiat toate cifrele pe care avem voie sa le taiem si trebuie sa le punem pe restu
+
+Hash:
+	-un hash cu functia de dispersie x%666013
+
+Hotelier:
+	-se parcurge vectorul pur si simplu ori de la dreapta la stanga ori de la stanga la dreapta atunci cand vine un nou turist
+	-cand se scoate un turist dintr-o camera se face in O(1)
+
+
+Loto:
+	-ca la seminar, impartim problema in 2, facem sumele posibile pentru primele 3 elemente
+	
+Muzica:
+	-se citesc melodiile lui vasile si se stocheaza intr-un set;
+	-se construiesc melodiile dj-ului, daca se gaseste melodia dj-ului, se numara, dupa se recalculeaza problemele dj-ului si se trece la urmatoarea
+
+
+Pariuri:
+	-se face un dictionar cu timp si bani, iar pt fiecare pereche de pe linie se adauga in hash la cheia timp valoarea bani
+
+
+Queue:
+	-coada cu doua stive ca la seminar, cand se adauga un element se pune in prima stiva, cand vrea sa se scoata topul cozii, se varsa toate elementele din prima stiva in a 2 a daca este goala, iar daca nu este goala se da pur si simplu pop din ea
+
+Branza:
+	-in deque
+	-la citirea unei saptamani se initializeaza o noua saptamana(struct)
+	-suma = 0
+	-pentru fiecare saptamana, se citesc cost, productie
+	-daca exista saptamani care nu mai pot fi utilizate, pt ca a expirat branza, le eliminam
+	-atat timp cat costul de productie al noii branze este <= decat ce este in back-ul deque, eliminam din deque
+	-se adauga saptamana in deque
+	-se adauga si la suma costul de producere si depozitare a cantitatii de branza ceruta in saptamana curenta, folosind cel mai mic disponibil in deque
+
+Proc2:
+	-se fac cozi free si busy pentru procesoare
+	-se adauga toate procesoarele
+	-se verifica daca exista procesoare care se elibereaza la fiecare pas
+	-se ia primul procesor din free si se pune in busy cu timpul aferent
+	-se scrie indicele procesorului in output;
+
+Timbre:
+	-se citesc nr de pagini, nr de intervale, nr maxim de timbre pe care le poate lua
+	-se face vectorul intervale, contine perechi (pagina maxima, cost timbru din interval)
+	-multiset timbre pentru stocarea costurilor minimale
+	-se citesc intervalele si se baga in vector
+	-se initializeaza suma
+	-se sorteaza vectorul crescator dupa marginea superioara
+	-cat timp mai sunt pagini, selecteaza 
+
+
+Vila2:
+	-in 2 deque, dmin, dmax
+	-se tin minte varsta si indexul fiecarui solarian
+	-se elimina elementele expirate
+	-daca varsta este prea mare din dmin, se elimina, incontinuu
+	-daca varsta este prea mica in dmax, se elimina, incontinuu
+	-se adauga solarianul si in dmin si in dmax
+	-se actualizeaza varsta maxima daca s-a depasit k
